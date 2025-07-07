@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WarmHearth Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="WarmHearth Kit Favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="WARMHEARTH FAVICON LOGO.png" id="spinning-logo" alt="WarmHearth Spinning Logo" />
+    </div>
+    <div class="title-container fade-in">
+      <h1 style="font-size: 2.8rem; color: var(--text-color); margin-bottom: 0.5rem;">Feedback</h1>
+      <p class="subtitle">Please answer the following interview questions in an email to <br><strong>henry.smith@student.hutchins.tas.edu.au</strong></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="feedback-questions">
+      <h2>Your Thoughts Matter</h2>
+      <ul>
+        <li><strong>Is the kit easy to understand and do you think it would be easy to use? Why? Why not?</strong></li>
+        <li><strong>Is there any <span style="font-weight: bold;">particular</span> part that you think would be beneficial to your home? Why?</strong></li>
+        <li><strong>Is there anything that you would take away from the kit or add to make it better?</strong></li>
+        <li><strong>Would you recommend this kit to people or organizations that you know?</strong></li>
+        <li><strong>What else do you or other people use already to fix these issues? How do they compare to our solution?</strong></li>
+      </ul>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <p style="font-size: 1.2rem; font-weight: 600;">How would you like to provide feedback?</p>
+        <a href="mailto:henry.smith@student.hutchins.tas.edu.au?subject=WarmHearth%20Feedback" class="email-btn">Through Outlook</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henry.smith@student.hutchins.tas.edu.au&su=WarmHearth%20Feedback" class="email-btn" target="_blank">Through Gmail</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WarmHearth: A Henry Smith Production</p>
+    <p>All rights reserved</p>
+  </footer>
+
+  <button class="toggle-darkmode" onclick="toggleDarkMode()">🌙</button>
+
+  <script>
+    const logo = document.getElementById('spinning-logo');
+    logo.style.animation = "spin 5s linear infinite";
+
+    // Dark mode toggle
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
