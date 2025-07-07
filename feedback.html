@@ -48,6 +48,17 @@
     const logo = document.getElementById('spinning-logo');
     logo.style.animation = "spin 5s linear infinite";
 
+    // Reveal sections on scroll - This is the fix!
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
     }
