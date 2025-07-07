@@ -144,6 +144,12 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.feedback-prompt p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
 .feedback-prompt a {
   display: inline-block;
   margin-top: 1rem;
@@ -158,6 +164,49 @@ h2 {
 
 .feedback-prompt a:hover {
   transform: scale(1.05);
+}
+
+/* FEEDBACK PAGE STYLING */
+.feedback-section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--text-color);
+}
+
+.feedback-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.feedback-lead {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.feedback-questions {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.email-btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.email-btn:hover {
+  background-color: #cc3333;
 }
 
 /* FOOTER */
