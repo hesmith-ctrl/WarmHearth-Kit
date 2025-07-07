@@ -129,6 +129,37 @@ h2 {
   margin-top: 1rem;
 }
 
+/* FEEDBACK PROMPT */
+.feedback-prompt {
+  text-align: center;
+  background-color: var(--accent-color);
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+  border-radius: 12px;
+  color: var(--header-color);
+}
+
+.feedback-prompt h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.feedback-prompt a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.feedback-prompt a:hover {
+  transform: scale(1.05);
+}
+
 /* FOOTER */
 footer {
   background-color: #222;
