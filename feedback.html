@@ -20,9 +20,13 @@
   </header>
 
   <main>
-    <section class="feedback-questions">
-      <h2>Your Thoughts Matter</h2>
-      <ul>
+    <section class="feedback-section">
+      <div class="feedback-intro">
+        <h2>Your Thoughts Matter</h2>
+        <p class="feedback-lead">We’re looking for your honest thoughts on the WarmHearth Kit. Please answer the following questions and let us know how we can make this product better for the people who need it most.</p>
+      </div>
+
+      <ul class="feedback-questions">
         <li><strong>Is the kit easy to understand and do you think it would be easy to use? Why? Why not?</strong></li>
         <li><strong>Is there any <span style="font-weight: bold;">particular</span> part that you think would be beneficial to your home? Why?</strong></li>
         <li><strong>Is there anything that you would take away from the kit or add to make it better?</strong></li>
@@ -31,7 +35,7 @@
       </ul>
 
       <div style="text-align: center; margin-top: 2rem;">
-        <p style="font-size: 1.2rem; font-weight: 600;">How would you like to provide feedback?</p>
+        <p style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">How would you like to provide feedback?</p>
         <a href="mailto:henry.smith@student.hutchins.tas.edu.au?subject=WarmHearth%20Feedback" class="email-btn">Through Outlook</a>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henry.smith@student.hutchins.tas.edu.au&su=WarmHearth%20Feedback" class="email-btn" target="_blank">Through Gmail</a>
       </div>
@@ -49,7 +53,6 @@
     const logo = document.getElementById('spinning-logo');
     logo.style.animation = "spin 5s linear infinite";
 
-    // Dark mode toggle
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
     }
