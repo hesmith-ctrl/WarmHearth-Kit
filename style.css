@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -9,15 +10,29 @@ body {
 header {
   background-color: #ff4d4d;
   color: white;
-  padding: 1.5rem;
+  padding: 2rem;
   text-align: center;
   position: relative;
 }
 
 #spinning-logo {
-  width: 100px;
+  width: 160px;
   height: auto;
+  margin-bottom: 1rem;
   animation: spin 5s linear infinite;
+}
+
+/* New Title Font */
+h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3rem;
+  margin: 0.5rem 0 0;
+}
+
+.subtitle {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 @keyframes spin {
@@ -27,7 +42,7 @@ header {
 
 main {
   padding: 2rem;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -36,15 +51,17 @@ h2 {
   margin-top: 2rem;
 }
 
+/* Vertical Kit Images */
 .kit-images {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
   margin: 1rem 0;
 }
 
 .kit-images img {
-  width: 48%;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
