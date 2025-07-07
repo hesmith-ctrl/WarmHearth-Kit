@@ -45,6 +45,13 @@
       <h2>About Us</h2>
       <p>This project was created as part of the <strong>AFS Global STEM Changemakers Program</strong> by <strong>Henry Smith</strong>, a Hobart-based student passionate about sustainability, equity, and innovation.</p>
     </section>
+
+    <!-- 💬 Feedback Call-To-Action -->
+    <section class="feedback-prompt">
+      <h2>We Need YOUR Help!</h2>
+      <p>Help us improve the WarmHearth Kit by sharing your thoughts.</p>
+      <a href="feedback.html">Provide Feedback</a>
+    </section>
   </main>
 
   <footer>
@@ -52,10 +59,8 @@
     <p>All rights reserved</p>
   </footer>
 
-  <!-- 🌙 Dark Mode Toggle Button -->
   <button class="toggle-darkmode" onclick="toggleDarkMode()">🌙</button>
 
-  <!-- 🔁 Animations + Scroll + Dark Mode Script -->
   <script>
     const logo = document.getElementById('spinning-logo');
     logo.style.animation = "spin 5s linear infinite";
@@ -71,7 +76,7 @@
     }, { threshold: 0.1 });
     sections.forEach(section => observer.observe(section));
 
-    // Toggle dark mode
+    // Dark mode toggle
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
     }
