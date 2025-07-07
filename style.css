@@ -3,17 +3,33 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+  --accent-color: #ff4d4d;
+  --header-color: white;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #f1f1f1;
+  --accent-color: #e63946;
+  --header-color: #121212;
 }
 
 /* HEADER */
 header {
-  background-color: #ff4d4d;
-  color: white;
+  background-color: var(--accent-color);
+  color: var(--header-color);
   text-align: center;
   position: relative;
   padding: 2rem 1rem 3rem;
+  transition: background-color 0.3s;
 }
 
 .logo-container {
@@ -73,7 +89,7 @@ main {
 }
 
 h2 {
-  color: #ff4d4d;
+  color: var(--accent-color);
   margin-top: 2.5rem;
   font-size: 2rem;
   font-weight: 600;
@@ -101,7 +117,6 @@ h2 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Smaller for low-res image */
 .kit-images img.closed-kit {
   width: 60%;
   max-width: 500px;
@@ -133,4 +148,45 @@ section {
 section.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  #spinning-logo {
+    width: 120px;
+  }
+
+  #title-image {
+    width: 90%;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* DARK MODE TOGGLE BUTTON */
+.toggle-darkmode {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 1000;
+}
+
+.toggle-darkmode:hover {
+  transform: scale(1.1);
 }
