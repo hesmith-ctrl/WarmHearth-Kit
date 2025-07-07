@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
@@ -10,29 +10,30 @@ body {
 header {
   background-color: #ff4d4d;
   color: white;
-  padding: 2rem;
+  padding: 3rem 1rem 2rem;
   text-align: center;
   position: relative;
 }
 
 #spinning-logo {
-  width: 160px;
+  width: 200px;
   height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   animation: spin 5s linear infinite;
 }
 
-/* New Title Font */
 h1 {
-  font-family: 'Fredoka', sans-serif;
-  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
   margin: 0.5rem 0 0;
+  font-weight: 600;
 }
 
 .subtitle {
-  font-family: 'Fredoka', sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
   margin-top: 0.5rem;
+  font-weight: 400;
 }
 
 @keyframes spin {
@@ -48,15 +49,15 @@ main {
 
 h2 {
   color: #ff4d4d;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  font-size: 2rem;
 }
 
-/* Vertical Kit Images */
 .kit-images {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin: 1rem 0;
+  gap: 2rem;
+  margin: 1.5rem 0;
 }
 
 .kit-images img {
@@ -66,10 +67,16 @@ h2 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.value-proposition p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
 footer {
   background-color: #222;
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-top: 2rem;
 }
