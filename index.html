@@ -52,13 +52,16 @@
     <p>All rights reserved</p>
   </footer>
 
+  <!-- 🌙 Dark Mode Toggle Button -->
+  <button class="toggle-darkmode" onclick="toggleDarkMode()">🌙</button>
+
+  <!-- 🔁 Animations + Scroll + Dark Mode Script -->
   <script>
     const logo = document.getElementById('spinning-logo');
     logo.style.animation = "spin 5s linear infinite";
 
     // Reveal sections on scroll
     const sections = document.querySelectorAll("section");
-
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -66,10 +69,12 @@
         }
       });
     }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
 
-    sections.forEach(section => {
-      observer.observe(section);
-    });
+    // Toggle dark mode
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
   </script>
 </body>
 </html>
