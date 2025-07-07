@@ -11,16 +11,31 @@ body {
 header {
   background-color: #ff4d4d;
   color: white;
-  padding: 3rem 1rem 2rem;
   text-align: center;
   position: relative;
+  padding: 2rem 1rem 3rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 #spinning-logo {
   width: 160px;
   height: auto;
   animation: spin 5s linear infinite;
-  margin-bottom: 1.5rem;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 
 #title-image {
@@ -34,11 +49,20 @@ header {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
+  margin-top: 0;
 }
 
+/* ANIMATIONS */
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* MAIN LAYOUT */
