@@ -1,4 +1,4 @@
-/* Global Styles */
+/* GLOBAL STYLES */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -7,6 +7,7 @@ body {
   color: #333;
 }
 
+/* HEADER STYLES */
 header {
   background-color: #ff4d4d;
   color: white;
@@ -20,6 +21,11 @@ header {
   height: auto;
   margin-bottom: 1.5rem;
   animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 h1 {
@@ -36,11 +42,7 @@ h1 {
   font-weight: 400;
 }
 
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
+/* MAIN CONTENT STYLES */
 main {
   padding: 2rem;
   max-width: 900px;
@@ -51,13 +53,16 @@ h2 {
   color: #ff4d4d;
   margin-top: 2.5rem;
   font-size: 2rem;
+  font-weight: 600;
 }
 
+/* KIT IMAGES */
 .kit-images {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin: 1.5rem 0;
+  align-items: center;
 }
 
 .kit-images img {
@@ -67,12 +72,20 @@ h2 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* 🆕 Closed kit = smaller */
+.kit-images img.closed-kit {
+  width: 60%;
+  max-width: 500px;
+}
+
+/* VALUE PROPOSITION */
 .value-proposition p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-top: 1rem;
 }
 
+/* FOOTER */
 footer {
   background-color: #222;
   color: #fff;
