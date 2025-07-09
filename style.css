@@ -62,7 +62,6 @@ header {
 }
 
 .subtitle {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   margin-top: 0;
@@ -127,6 +126,36 @@ h2 {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-top: 1rem;
+}
+
+/* AUDIO PODCAST SECTION */
+.audio-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.audio-section h2 {
+  font-size: 2.2rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.audio-block {
+  margin-bottom: 3rem;
+}
+
+.audio-block h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+audio {
+  width: 100%;
+  max-width: 600px;
+  outline: none;
+  border-radius: 8px;
+  background-color: #f1f1f1;
 }
 
 /* FEEDBACK PROMPT */
@@ -242,6 +271,14 @@ section.visible {
 
   h2 {
     font-size: 1.6rem;
+  }
+
+  .audio-section h2 {
+    font-size: 1.7rem;
+  }
+
+  .audio-block h3 {
+    font-size: 1.1rem;
   }
 }
 
