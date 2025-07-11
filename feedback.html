@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WarmHearth Feedback</title>
+  <title>WarmHearth Kit – Resources</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="WarmHearth Kit Favicon.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -14,28 +14,33 @@
       <img src="WARMHEARTH FAVICON LOGO.png" id="spinning-logo" alt="WarmHearth Spinning Logo" />
     </div>
     <div class="title-container fade-in">
-      <h1 style="font-size: 2.8rem; color: var(--text-color); margin-bottom: 0.5rem;">Feedback</h1>
-      <p class="subtitle">Please answer the following interview questions in an email to <br><strong>henry.smith@student.hutchins.tas.edu.au</strong></p>
+      <h1 style="font-size: 2.6rem;">Energy Poverty Resources</h1>
+      <p class="subtitle">Discover the key research and reports that guide the mission behind the WarmHearth Kit.</p>
     </div>
   </header>
- <main>
-  <section class="feedback-section">
-    <div class="feedback-intro">
-      <h2>Your Thoughts Matter</h2>
-      <p class="feedback-lead">
-        We’re looking for your honest thoughts on the WarmHearth Kit. Please read the interview questions below and send your answers by email.
-      </p>
-    </div>
 
-    <img src="WarmHearth Kit Feedback Questions.png" alt="WarmHearth Kit Feedback Questions" />
- 
-    <div style="text-align: center; margin-top: 2rem;">
-      <p style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">How would you like to provide feedback?</p>
-      <a href="mailto:henry.smith@student.hutchins.tas.edu.au?subject=WarmHearth%20Feedback" class="email-btn">Through Outlook</a>
-      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=henry.smith@student.hutchins.tas.edu.au&su=WarmHearth%20Feedback" class="email-btn" target="_blank">Through Gmail</a>
-    </div>
-  </section>
-</main>
+  <main>
+    <section class="resources-section">
+      <h2>Downloadable Research</h2>
+      <ul class="resource-list">
+        <li><a href="ACOSS-Deloitte-low-income-energy-upgrades-Final-July-2024.pdf" download>📄 ACOSS & Deloitte Report (2024)</a></li>
+        <li><a href="PIIS2666606523000524.pdf" download>📄 The Lancet Planetary Health: Energy & Health Link (2024)</a></li>
+      </ul>
+
+      <h2>External Resources</h2>
+      <div class="resource-links">
+        <a href="https://www.adelaide.edu.au/newsroom/news/list/2025/06/17/energy-povertys-mental-health-harms-are-about-more-than-money" target="_blank" class="external-button">
+          University of Adelaide Study (2025)
+        </a>
+        <a href="https://www.iea.org/reports/global-energy-review-2025" target="_blank" class="external-button">
+          IEA & WHO Global Energy Access Reports
+        </a>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0973082624001947" target="_blank" class="external-button">
+          Global Energy & Housing Health Review (2024)
+        </a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 WarmHearth: A Henry Smith Production</p>
@@ -47,17 +52,6 @@
   <script>
     const logo = document.getElementById('spinning-logo');
     logo.style.animation = "spin 5s linear infinite";
-
-    // Reveal sections on scroll - This is the fix!
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.1 });
-    sections.forEach(section => observer.observe(section));
 
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
