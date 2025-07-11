@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WarmHearth Kit – Resources</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="WarmHearth Kit Favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="WARMHEARTH FAVICON LOGO.png" id="spinning-logo" alt="WarmHearth Spinning Logo" />
+    </div>
+    <div class="title-container fade-in">
+      <h1 style="font-size: 2.5rem; color: var(--text-color); margin-bottom: 0.5rem;">Energy Poverty Resources</h1>
+      <p class="subtitle">Explore the sources that support WarmHearth Kit’s mission</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="resource-section">
+      <h2>🔍 Research & Reports</h2>
+      <ul class="resource-list">
+        <li>
+          <strong>ACOSS & Deloitte: Low-Income Energy Upgrades Final Report (July 2024)</strong><br />
+          <a href="ACOSS-Deloitte-low-income-energy-upgrades-Final-July-2024.pdf" target="_blank">Download PDF</a>
+        </li>
+        <li>
+          <strong>The relationships among housing, energy poverty, and health: A scoping review</strong><br />
+          <a href="PIIS2666606523000524.pdf" target="_blank">Download PDF</a>
+        </li>
+        <li>
+          <strong>University of Adelaide Study (2025): Energy poverty’s mental health harms are about more than money</strong><br />
+          <em>Key insights into monetary vs. self-reported energy poverty and psychological wellbeing.</em>
+        </li>
+        <li>
+          <strong>IEA & WHO Global Energy Access Reports</strong><br />
+          <em>Highlighting the global impact of energy accessibility on health and equity.</em>
+        </li>
+        <li>
+          <strong>UK Fuel Poverty Strategy, 2001</strong><br />
+          <em>Landmark document connecting cold homes with long-term health risks and housing quality.</em>
+        </li>
+      </ul>
+    </section>
+
+    <section class="back-home-link">
+      <h2>Return to Main Page</h2>
+      <a href="index.html">⬅ Back to WarmHearth Kit</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WarmHearth: A Henry Smith Production</p>
+    <p>All rights reserved</p>
+  </footer>
+
+  <button class="toggle-darkmode" onclick="toggleDarkMode()">🌙</button>
+
+  <script>
+    const logo = document.getElementById('spinning-logo');
+    logo.style.animation = "spin 5s linear infinite";
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    // Fade-in scroll effect
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
