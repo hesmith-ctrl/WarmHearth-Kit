@@ -6,7 +6,7 @@
   <title>WarmHearth Kit – Resources</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="WarmHearth Kit Favicon.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -14,42 +14,30 @@
       <img src="WARMHEARTH FAVICON LOGO.png" id="spinning-logo" alt="WarmHearth Spinning Logo" />
     </div>
     <div class="title-container fade-in">
-      <h1 style="font-size: 2.5rem; color: var(--text-color); margin-bottom: 0.5rem;">Energy Poverty Resources</h1>
-      <p class="subtitle">Explore the sources that support WarmHearth Kit’s mission</p>
+      <h1 style="font-size: 2.6rem;">Energy Poverty Resources</h1>
+      <p class="subtitle">Discover the key research and reports that guide the mission behind the WarmHearth Kit.</p>
     </div>
   </header>
 
   <main>
     <section class="resource-section">
-      <h2>🔍 Research & Reports</h2>
+      <h2>📄 Downloadable Research</h2>
       <ul class="resource-list">
-        <li>
-          <strong>ACOSS & Deloitte: Low-Income Energy Upgrades Final Report (July 2024)</strong><br />
-          <a href="ACOSS-Deloitte-low-income-energy-upgrades-Final-July-2024.pdf" target="_blank">Download PDF</a>
-        </li>
-        <li>
-          <strong>The relationships among housing, energy poverty, and health: A scoping review</strong><br />
-          <a href="PIIS2666606523000524.pdf" target="_blank">Download PDF</a>
-        </li>
-        <li>
-          <strong>University of Adelaide Study (2025): Energy poverty’s mental health harms are about more than money</strong><br />
-          <em>Key insights into monetary vs. self-reported energy poverty and psychological wellbeing.</em>
-        </li>
-        <li>
-          <strong>IEA & WHO Global Energy Access Reports</strong><br />
-          <em>Highlighting the global impact of energy accessibility on health and equity.</em>
-        </li>
-        <li>
-          <strong>UK Fuel Poverty Strategy, 2001</strong><br />
-          <em>Landmark document connecting cold homes with long-term health risks and housing quality.</em>
-        </li>
+        <li><a href="ACOSS-Deloitte-low-income-energy-upgrades-Final-July-2024.pdf" download>ACOSS & Deloitte Report (2024)</a></li>
+        <li><a href="PIIS2666606523000524.pdf" download>The Lancet Planetary Health: Energy & Health Link</a></li>
+      </ul>
+
+      <h2>🔗 External Sources</h2>
+      <ul class="resource-list">
+        <li><a href="https://www.adelaide.edu.au/newsroom/news/list/2025/06/17/energy-povertys-mental-health-harms-are-about-more-than-money" target="_blank">University of Adelaide Study (2025)</a></li>
+        <li><a href="https://www.iea.org/reports/global-energy-review-2025" target="_blank">IEA & WHO Global Energy Access Reports</a></li>
+        <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0973082624001947" target="_blank">The Relationships Among Energy Poverty, Housing, and Health</a></li>
       </ul>
     </section>
 
-    <section class="back-home-link">
-      <h2>Return to Main Page</h2>
-      <a href="index.html">⬅ Back to WarmHearth Kit</a>
-    </section>
+    <div class="back-home-link">
+      <a href="index.html">⬅ Back to Home</a>
+    </div>
   </main>
 
   <footer>
@@ -66,17 +54,6 @@
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
     }
-
-    // Fade-in scroll effect
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.1 });
-    sections.forEach(section => observer.observe(section));
   </script>
 </body>
 </html>
