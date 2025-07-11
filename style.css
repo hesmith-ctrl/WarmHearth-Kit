@@ -183,8 +183,7 @@ audio {
   margin: 0 auto 1.5rem;
 }
 
-.feedback-prompt a,
-.resources-button {
+.feedback-prompt a {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
@@ -196,9 +195,37 @@ audio {
   transition: transform 0.2s;
 }
 
-.feedback-prompt a:hover,
+.feedback-prompt a:hover {
+  transform: scale(1.05);
+}
+
+/* RESOURCES SECTION ON MAIN PAGE */
+.resources-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.resources-cta p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+
+.resources-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
 .resources-button:hover {
   transform: scale(1.05);
+  background-color: #cc3333;
 }
 
 /* RESOURCE PAGE STYLING */
@@ -233,6 +260,7 @@ audio {
   background-color: #cc3333;
 }
 
+/* BACK LINK */
 .back-home-link {
   text-align: center;
   margin: 3rem 0 1rem;
