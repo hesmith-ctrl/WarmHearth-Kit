@@ -54,17 +54,8 @@
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
     }
-
-    // ADD THIS JAVASCRIPT FOR THE SCROLL ANIMATIONS
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.1 });
-    sections.forEach(section => observer.observe(section));
+    // The IntersectionObserver JavaScript for scroll animations has been removed from this page.
+    // Sections on this page will now be visible by default.
   </script>
 </body>
 </html>
