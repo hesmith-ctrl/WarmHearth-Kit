@@ -290,14 +290,14 @@ footer {
   margin-top: 2rem;
 }
 
-/* SCROLL ANIMATIONS */
-section {
+/* SCROLL ANIMATIONS (Now applied only to .animated-section) */
+.animated-section { /* New class for sections that should animate */
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-section.visible {
+.animated-section.visible {
   opacity: 1;
   transform: translateY(0);
 }
